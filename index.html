@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+
+        <script src="script.js" defer></script>
+
+        <title>ENSIIE</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="accessibility-bar">
+                <ul class="accessibility-menu flexrow">
+                    <li>
+                        <button class="accessibility-menu__btn flexrow">
+                            <svg class="accessibility-menu__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 8H12.01M12 11V16M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#1F1814" stroke-linecap="square"/>
+                            </svg>
+                            <p class="accessibility-menu__text">Basse consommation</p>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </button>
+                    </li>
+                    <li>
+                         <button class="accessibility-menu__btn flexrow">
+                            <svg class="accessibility-menu__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.99902 3L20.999 21M9.8433 9.91364C9.32066 10.4536 8.99902 11.1892 8.99902 12C8.99902 13.6569 10.3422 15 11.999 15C12.8215 15 13.5667 14.669 14.1086 14.133M6.49902 6.64715C4.59972 7.90034 3.15305 9.78394 2.45703 12C3.73128 16.0571 7.52159 19 11.9992 19C13.9881 19 15.8414 18.4194 17.3988 17.4184M10.999 5.04939C11.328 5.01673 11.6617 5 11.9992 5C16.4769 5 20.2672 7.94291 21.5414 12C21.2607 12.894 20.8577 13.7338 20.3522 14.5" stroke="#1F1814" stroke-linecap="square"/>
+                            </svg>
+                            <p class="accessibility-menu__text">Accessibilité</p>
+                            <svg class="accessibility-menu__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 9L12 15L18 9" stroke="#1F1814" stroke-linecap="square"/>
+                            </svg>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="accessibility-menu__btn flexrow">
+                            <p class="accessibility-menu__text">A -</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="accessibility-menu__btn flexrow">
+                            <p class="accessibility-menu__text">A</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="accessibility-menu__btn flexrow">
+                            <p class="accessibility-menu__text">A +</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="accessibility-menu__btn flexrow">
+                            <p class="accessibility-menu__text">Fr</p>
+                            <svg class="accessibility-menu__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 9L12 15L18 9" stroke="#1F1814" stroke-linecap="square"/>
+                            </svg>
+                        </button>
+                    </li>
+                  </ul>
+            </div>
+            <div class="main-menu flexrow">
+                <a href="" class="logo">
+                    <img src="img/logo.png" alt="logo ensiie">
+                </a>
+                <nav class="navbar flexrow">
+                    <button class="navbar__btn navbar__btn--bold">Formation</button>
+                    <button class="navbar__btn navbar__btn--bold">Recherche &amp; Innovation</button>
+                    <button class="navbar__btn navbar__btn--bold">Entreprise</button>
+                    <button class="navbar__btn">Ecole</button>
+                    <button class="navbar__btn">Campus</button>
+                    <button class="navbar__btn">International</button>
+                    <button class="navbar__btn">Après l'ENSIIE</button>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="news flexrow">
+                <a href="" class="news__link">
+                    <div class="news-left flexcolumn">
+                        <h3 class="news__h3">Actualités ENSIIE</h3>
+                        <div class="news-left__content flexcolumn">
+                            <h2 class="news__h2">
+                                <span class="news__h2__line nowrap">Portes ouvertes</span>
+                                <span class="news__h2__line nowrap">le 3 février</span>
+                            </h2>
+                            <p class="news__text">
+                                Responsive is not the goal here, <br>je fais juste des essayages avec flexbox et css en général.
+                            </p>
+                            </div>
+                        <div class="news-left__bottom flexrow">
+                            <p class="news-left__bottom__text">Voir toutes les actualités</p>
+                            <svg class="news__svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="47" height="47" stroke="#1F1814"/>
+                                <path d="M17 24H31M31 24L25 18M31 24L25 30" stroke="#1969B0" stroke-width="1.5" stroke-linecap="square"/>
+                            </svg> 
+                        </div>
+                        <img src="img/bracket.png" alt="" class="news__brackets">
+                    </div>
+                </a>
+                <img src="img/actu-img.png" alt="Etudiant portes ouvertes" class="news-right">
+            </section>
+            <section class="expertise flexcolumn">
+                <nav class="expertise__navbar flexrow">
+                    <button class="expertise__btn flexcolumn">
+                        <span class="expertise__btn__brackets flexrow">
+                            (
+                                <svg class="expertise__btn__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 13.3544V21L12 19L8.5 21V13.3544M15.5 13.3544L15.8184 12.8184L17.1962 12L17.216 10.3976L18 9L17.216 7.60238L17.1962 6L15.8184 5.18162L15 3.80385L13.3976 3.784L12 3L10.6024 3.784L9 3.80385L8.18162 5.18162L6.80385 6L6.784 7.60238L6 9L6.784 10.3976L6.80385 12L8.18162 12.8184L8.5 13.3544M15.5 13.3544L15 14.1962L13.3976 14.216L12 15L10.6024 14.216L9 14.1962L8.5 13.3544M14 9C14 10.1046 13.1046 11 12 11C10.8954 11 10 10.1046 10 9C10 7.89543 10.8954 7 12 7C13.1046 7 14 7.89543 14 9Z" stroke="#1F1814" stroke-width="2"/>
+                                </svg>
+                            )
+                        </span>
+                        <p class="expertise__btn__line">
+                            Futur étudiants
+                        </p>
+                        <p class="expertise__btn__line">
+                            &amp; apprentis
+                        </p>
+                    </button>  
+                    <button class="expertise__btn flexcolumn">
+                        <span class="expertise__btn__brackets flexrow">
+                            (
+                                <svg class="expertise__btn__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_2742_5319)">
+                                        <path d="M22 9L12 4L2 9L12 14L22 9ZM22 9V15M19 11V16.5L12 20L5 16.5V11" stroke="#1F1814" stroke-width="2" stroke-linecap="square"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_2742_5319">
+                                            <rect width="24" height="24" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            )
+                        </span>
+                        <p class="expertise__btn__line">
+                            Etudiants, apprentis
+                        </p>
+                        <p class="expertise__btn__line">
+                            &amp; alumnis
+                        </p>
+                    </button>  
+                    <button class="expertise__btn flexcolumn">
+                        <span class="expertise__btn__brackets flexrow">
+                            (
+                                <svg class="expertise__btn__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.63702 14.1236L7.05123 15.5379M8.46545 11.2952L9.87966 12.7094M11.2939 8.46679L12.7081 9.881M14.1223 5.63836L15.5365 7.05258M2.80859 16.9521L7.05123 21.1947L21.1934 7.05258L16.9507 2.80994L2.80859 16.9521Z" stroke="#1F1814" stroke-width="2" stroke-linecap="square"/>
+                                </svg>    
+                            )
+                        </span>
+                        <p class="expertise__btn__line">
+                            Personnels
+                        </p>
+                        <p class="expertise__btn__line">
+                            &amp; enseignants
+                        </p>
+                    </button>  
+                    <button class="expertise__btn flexcolumn">
+                        <span class="expertise__btn__brackets flexrow">
+                            (
+                                <svg class="expertise__btn__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 7V6.2C16 5.0799 16 4.51984 15.782 4.09202C15.5903 3.71569 15.2843 3.40973 14.908 3.21799C14.4802 3 13.9201 3 12.8 3H11.2C10.0799 3 9.51984 3 9.09202 3.21799C8.71569 3.40973 8.40973 3.71569 8.21799 4.09202C8 4.51984 8 5.0799 8 6.2V7M9 15V12M15 15V12M3.02721 10.0263C3.38776 10.3719 7.28572 14 12 14C16.7143 14 20.6122 10.3719 20.9728 10.0263M3.02721 10.0263C3 10.493 3 11.0665 3 11.8V16.2C3 17.8802 3 18.7202 3.32698 19.362C3.6146 19.9265 4.07354 20.3854 4.63803 20.673C5.27976 21 6.11984 21 7.8 21H16.2C17.8802 21 18.7202 21 19.362 20.673C19.9265 20.3854 20.3854 19.9265 20.673 19.362C21 18.7202 21 17.8802 21 16.2V11.8C21 11.0665 21 10.493 20.9728 10.0263M3.02721 10.0263C3.06233 9.4241 3.14276 8.99959 3.32698 8.63803C3.6146 8.07354 4.07354 7.6146 4.63803 7.32698C5.27976 7 6.11984 7 7.8 7H16.2C17.8802 7 18.7202 7 19.362 7.32698C19.9265 7.6146 20.3854 8.07354 20.673 8.63803C20.8572 8.99959 20.9377 9.4241 20.9728 10.0263" stroke="#1F1814" stroke-width="2" stroke-linecap="square"/>
+                                </svg>
+                            )
+                        </span>
+                        <p class="expertise__btn__line">
+                            Entreprises
+                        </p>
+                        <p class="expertise__btn__line">
+                            &amp; partenaires
+                        </p>
+                    </button>  
+                </nav>
+                <div class="expertise__content flexrow">
+                    <article class="expertise__left flexcolumn">
+                        <div class="expertise-left__content flexcolumn">
+                            <a href="" class="expertise__link--hoverable">
+                                <h2 class="expertise__h2">
+                                    <span class="nowrap expertise__h2__line">
+                                        L'ENSIIE
+                                    </span>
+                                    <br>
+                                    <span class="nowrap expertise__h2__line">
+                                        une école d'expert·e·s
+                                    </span>
+                                </h2>
+                             </a>
+                            <p class="expertise__text">L’École Nationale Supérieure d’Informatique pour l’Industrie et l’Entreprise est une des plus anciennes écoles à délivrer le diplôme d’ingénieur en informatique.</p>
+                            <p class="expertise__text">L’ENSIIE vous propose des parcours de pointe, variés et ouverts à l’international. </p>
+                        </div>
+                        <a class="expertise__link expertise__link--hoverable flexrow" href="" target="_blank" rel="noopener noreferrer">
+                            <p class="expertise__link__line">En savoir plus</p>
+                            <svg class="expertise__link__svg" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="36" height="36" fill="#1969B0"/>
+                                <path d="M12.1667 18H23.8334M23.8334 18L18.8334 13M23.8334 18L18.8334 23" stroke="white" stroke-linecap="square"/>
+                            </svg>
+                        </a>
+                    </article>
+                    <article class="expertise__right flexcolumn">
+                        <div class="expertise__stat flexcolumn">
+                            <strong class="expertise__stat__number">
+                                <span class="expertise__stat__number--color">></span>50
+                            </strong>
+                            <p class="expertise__stat__text">Années d'innovation</p>
+                        </div>
+                        <div class="expertise__stat flexcolumn">
+                            <strong class="expertise__stat__number">
+                                <span class="expertise__stat__number--color">+</span>5000
+                            </strong>
+                            <p class="expertise__stat__text">Ancien·ne·s Diplômé·e·s</p>
+                        </div>
+                        <div class="expertise__stat flexcolumn">
+                            <strong class="expertise__stat__number">
+                                <span class="expertise__stat__number--color">></span>92
+                            </strong>
+                            <p class="expertise__stat__text">Entreprises partenaires</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="formation flexrow">
+                <div class="formation-left flexcolumn">
+                    <ul class="formation-left__vertical-links flexcolumn">
+                        <li class="formation-left__vertical-link">
+                            <button class="formation-left__btn flexrow">
+                                <div class="flexrow">
+                                    <sup class="formation-left__btn__number">(12)</sup>
+                                    <p class="formation-left__btn__text">
+                                        Formation initiale sous statut étudiant
+                                    </p>
+                                </div>
+                                <svg class="formation-left__btn__svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="0.5" width="47" height="47" stroke="#D0CAC2"/>
+                                    <path d="M17 24H31M31 24L25 18M31 24L25 30" stroke="#1969B0" stroke-width="1.5" stroke-linecap="square"/>
+                                </svg>                                                                               
+                            </button> 
+                        </li>
+                        <li class="formation-left__vertical-link">
+                            <button class="formation-left__btn flexrow">
+                                <div class="flexrow">
+                                    <sup class="formatio-leftn__btn__number">(03)</sup>
+                                    <p class="formation-left__btn__text">
+                                        Formation initiale sous statut apprenti
+                                    </p>
+                                </div>
+                                <svg class="formation-left__btn__svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="0.5" width="47" height="47" stroke="#D0CAC2"/>
+                                    <path d="M17 24H31M31 24L25 18M31 24L25 30" stroke="#1969B0" stroke-width="1.5" stroke-linecap="square"/>
+                                </svg> 
+                            </button> 
+                        </li>
+                        <li class="formation-left__vertical-link">
+                            <button class="formation-left__btn flexrow">
+                                <div class="flexrow">
+                                    <sup class="formation-left__btn__number">(18)</sup>
+                                    <p class="formation-left__btn__text">
+                                        Formation continue
+                                    </p>
+                                </div>
+                                <svg class="formation-left__btn__svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="0.5" width="47" height="47" stroke="#D0CAC2"/>
+                                    <path d="M17 24H31M31 24L25 18M31 24L25 30" stroke="#1969B0" stroke-width="1.5" stroke-linecap="square"/>
+                                </svg> 
+                            </button> 
+                        </li>
+                        <li class="formation-left__vertical-link">
+                            <button class="formation-left__btn flexrow">
+                                <div class="flexrow">
+                                    <sup class="formation-left__btn__number">(11)</sup>
+                                    <p class="formation-left__btn__text">
+                                        Master &amp; autres diplômes
+                                    </p>
+                                </div>
+                                <svg class="formation-left__btn__svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="0.5" width="47" height="47" stroke="#D0CAC2"/>
+                                    <path d="M17 24H31M31 24L25 18M31 24L25 30" stroke="#1969B0" stroke-width="1.5" stroke-linecap="square"/>
+                                </svg> 
+                            </button> 
+                        </li>
+                        <li class="formation-left__vertical-link">
+                            <button class="formation-left__btn flexrow">
+                                <div class="flexrow">
+                                    <sup class="formation-left__btn__number">(05)</sup>
+                                    <p class="formation-left__btn__text">
+                                        Entreprenariat
+                                    </p>
+                                </div>
+                                <svg class="formation-left__btn__svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="0.5" width="47" height="47" stroke="#D0CAC2"/>
+                                    <path d="M17 24H31M31 24L25 18M31 24L25 30" stroke="#1969B0" stroke-width="1.5" stroke-linecap="square"/>
+                                </svg> 
+                            </button> 
+                        </li>
+                        <li class="formation-left__vertical-link">
+                            <button class="formation-left__btn flexrow">
+                                <div class="flexrow">
+                                    <sup class="formation-left__btn__number">(09)</sup>
+                                    <p class="formation-left__btn__text">
+                                        VAE
+                                    </p>
+                                </div>
+                                <svg class="formation-left__btn__svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="0.5" width="47" height="47" stroke="#D0CAC2"/>
+                                    <path d="M17 24H31M31 24L25 18M31 24L25 30" stroke="#1969B0" stroke-width="1.5" stroke-linecap="square"/>
+                                </svg> 
+                            </button> 
+                        </li>
+                    </ul>
+                </div>
+                <div class="formation-right__divider">
+                    <a href="" class="formation-right__link">
+                        <div class="formation-right flexcolumn">
+                            <h3 class="formation-right__h3">école &amp; formation</h3>
+                            <div class="formation-right__content flexcolumn">
+                                <h2 class="formation-right__h2">
+                                    <span class="formation-right__h2__line nowrap">Concours</span>
+                                    <br>
+                                    <span class="formation-right__h2__line nowrap">&amp; admission</span>
+                                </h2>
+                                <p class="formation-right__text">
+                                    Votre avenir d'ingénieur·e commence ici !
+                                    <br>
+                                    Découvrez comment devenir les talents de demain.
+                                </p>
+                            </div>
+                            <div class="formation-right__bottom flexrow">
+                                <p class="formation-right__bottom__text">En savoir plus</p>
+                                <!-- <i class="fas fa-arrow-right news-left__icon"></i> -->
+                                <svg class="formation-right__svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="0.5" width="47" height="47" stroke="#FFFFFF"/>
+                                    <path d="M17 24H31M31 24L25 18M31 24L25 30" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="square"/>
+                                </svg> 
+                            </div>
+                            <img src="img/bracket.png" alt="" class="formation-right__brackets">
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer class="footer flexcolumn">
+            <div class="footer-columns flexrow">
+                <div class="footer-column--first flexcolumn">
+                    <img class="footer-logo" src="img/logo-full.png" alt="Logo ENSIIE Paris Evry">
+                    <h4 class="footer__h4">Ecole Nationale Supérieure d'Informatique pour l'Industrie <span class="nowrap">et l'Entreprise</span></h4>
+                    <div class="footer__contact flexrow">
+                        <svg class="footer_svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 5.5C3 14.0604 9.93959 21 18.5 21C18.8862 21 19.2691 20.9859 19.6483 20.9581C20.0834 20.9262 20.3009 20.9103 20.499 20.7963C20.663 20.7019 20.8185 20.5345 20.9007 20.364C21 20.1582 21 19.9181 21 19.438V16.6207C21 16.2169 21 16.015 20.9335 15.842C20.8749 15.6891 20.7795 15.553 20.6559 15.4456C20.516 15.324 20.3262 15.255 19.9468 15.117L16.74 13.9509C16.2985 13.7904 16.0777 13.7101 15.8683 13.7237C15.6836 13.7357 15.5059 13.7988 15.3549 13.9058C15.1837 14.0271 15.0629 14.2285 14.8212 14.6314L14 16C11.3501 14.7999 9.2019 12.6489 8 10L9.36863 9.17882C9.77145 8.93713 9.97286 8.81628 10.0942 8.64506C10.2012 8.49408 10.2643 8.31637 10.2763 8.1317C10.2899 7.92227 10.2096 7.70153 10.0491 7.26005L8.88299 4.05321C8.745 3.67376 8.67601 3.48403 8.55442 3.3441C8.44701 3.22049 8.31089 3.12515 8.15802 3.06645C7.98496 3 7.78308 3 7.37932 3H4.56201C4.08188 3 3.84181 3 3.63598 3.09925C3.4655 3.18146 3.29814 3.33701 3.2037 3.50103C3.08968 3.69907 3.07375 3.91662 3.04189 4.35173C3.01413 4.73086 3 5.11378 3 5.5Z" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <a href="tel:+330169367350" class="footer__link footer__link--underline">+33 (0)1 69 36 73 50</a>
+                    </div>
+                    <div class="footer__contact flexrow">
+                        <svg class="footer_svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 8L8.44992 11.6333C9.73295 12.4886 10.3745 12.9163 11.0678 13.0825C11.6806 13.2293 12.3194 13.2293 12.9322 13.0825C13.6255 12.9163 14.2671 12.4886 15.5501 11.6333L21 8M6.2 19H17.8C18.9201 19 19.4802 19 19.908 18.782C20.2843 18.5903 20.5903 18.2843 20.782 17.908C21 17.4802 21 16.9201 21 15.8V8.2C21 7.0799 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V15.8C3 16.9201 3 17.4802 3.21799 17.908C3.40973 18.2843 3.71569 18.5903 4.09202 18.782C4.51984 19 5.07989 19 6.2 19Z" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <a href="mailto:info&ensiie.fr" class="footer__link footer__link--underline">info&amp;ensiie.fr</a>
+                    </div>
+                    <div class="footer__socials flexrow">
+                        <a href="" target="_blank" rel="noopener noreferrer">
+                            <img src="img/linkedin.png" alt="Linkedin">
+                        </a>
+                        <a href="" target="_blank" rel="noopener noreferrer">
+                            <img src="img/facebook.png" alt="facebook">
+                        </a>
+                        <a href="" target="_blank" rel="noopener noreferrer">
+                            <img src="img/twitter.png" alt="twitter">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column flexcolumn">
+                    <div class="footer-column__subject flexcolumn">
+                        <h4 class="footer-column__subject__title">Formation</h4>
+                        <ul class="footer-column__subject__content flexcolumn">
+                            <li>
+                                <a class="footer__link" href="http://" target="_blank" rel="noopener noreferrer">
+                                    Trouver votre formation
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer__link" href="http://" target="_blank" rel="noopener noreferrer">
+                                    FISE
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer__link" href="http://" target="_blank" rel="noopener noreferrer">
+                                    FISA
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer__link" href="http://" target="_blank" rel="noopener noreferrer">
+                                    Formation continue
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer__link" href="http://" target="_blank" rel="noopener noreferrer">
+                                    Master &amp; autres dipômes
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer__link" href="http://" target="_blank" rel="noopener noreferrer">
+                                    Entreprenariat
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer__link" href="http://" target="_blank" rel="noopener noreferrer">
+                                    VAE
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-column__subject flexcolumn">
+                        <h4 class="footer-column__subject__title">Recherche &amp; Innovation</h4>
+                        <ul class="footer-column__subject__content flexcolumn">
+                            <li>
+                                <a class="footer__link" href="http://" target="_blank" rel="noopener noreferrer">
+                                    Laboratoires
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer__link" href="http://" target="_blank" rel="noopener noreferrer">
+                                    Enseignants-chercheurs
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer__link" href="http://" target="_blank" rel="noopener noreferrer">
+                                    Publication &amp; distinctions
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer__link" href="http://" target="_blank" rel="noopener noreferrer">
+                                    Incubateurs
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-column flexcolumn">
+                    <div class="footer-column__subject flexcolumn">
+                        <h4 class="footer-column__subject__title">Entreprise</h4>
+                        <ul class="footer-column__subject__content flexcolumn">
+                            <li>
+                                <a class="footer__link" href="http://" target="_blank" rel="noopener noreferrer">
+                                    Partenaires
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer__link" href="http://" target="_blank" rel="noopener noreferrer">
+                                    Stage &amp; alternances
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer__link" href="http://" target="_blank" rel="noopener noreferrer">
+                                    Taxe d'apprentissage
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-column__subject flexcolumn">
+                        <h4 class="footer-column__subject__title">Ecole</h4>
+                        <ul class="footer-column__subject__content flexcolumn">
+                            <li>
+                                <a class="footer__link" href="http://" target="_blank" rel="noopener noreferrer">
+                                    Histoire
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer__link" href="http://" target="_blank" rel="noopener noreferrer">
+                                    Concours &amp; admission
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer__link" href="http://" target="_blank" rel="noopener noreferrer">
+                                    Partenaires
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer__link" href="http://" target="_blank" rel="noopener noreferrer">
+                                    Développement durable
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer__link" href="http://" target="_blank" rel="noopener noreferrer">
+                                    Actualités
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer__link" href="http://" target="_blank" rel="noopener noreferrer">
+                                    C-19
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-column flexcolumn">
+                    <div class="footer-column__subject flexcolumn">
+                        <h4 class="footer-column__subject__title">Campus</h4>
+                        <ul class="footer-column__subject__content flexcolumn">
+                            <li>
+                                <a class="footer__link" href="http://" target="_blank" rel="noopener noreferrer">
+                                    Infos pratiques
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer__link" href="http://" target="_blank" rel="noopener noreferrer">
+                                    Evènements
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer__link" href="http://" target="_blank" rel="noopener noreferrer">
+                                    Bourse
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer__link" href="http://" target="_blank" rel="noopener noreferrer">
+                                    Logement
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer__link" href="http://" target="_blank" rel="noopener noreferrer">
+                                    Junior Entreprise
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-column__subject flexcolumn">
+                        <h4 class="footer-column__subject__title">International</h4>
+                        <ul class="footer-column__subject__content flexcolumn">
+                            <li>
+                                <a class="footer__link" href="http://" target="_blank" rel="noopener noreferrer">
+                                    Relations internationales
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer__link" href="http://" target="_blank" rel="noopener noreferrer">
+                                    Partir à l'étranger
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer__link" href="http://" target="_blank" rel="noopener noreferrer">
+                                    Venir étudier à l'ENSIIE
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-column flexcolumn">
+                    <div class="footer-column__subject flexcolumn">
+                        <h4 class="footer-column__subject__title">Après l'ENSIIE</h4>
+                        <ul class="footer-column__subject__content flexcolumn">
+                            <li>
+                                <a class="footer__link" href="http://" target="_blank" rel="noopener noreferrer">
+                                    Faire une thèse
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer__link" href="http://" target="_blank" rel="noopener noreferrer">
+                                    Alumni
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer__link" href="http://" target="_blank" rel="noopener noreferrer">
+                                    Fon de dotation
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer__link" href="" target="_blank" rel="noopener noreferrer">
+                                    Insertion professionnelle
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom flexrow">
+                <div class="footer-bottom__links flexrow">
+                    <a class="footer__link" href="http://" target="_blank" rel="noopener noreferrer">
+                        Informations légales
+                    </a>
+                    <a class="footer__link" href="http://" target="_blank" rel="noopener noreferrer">
+                        Politique de confidentialité
+                    </a>
+                    <a class="footer__link" href="http://" target="_blank" rel="noopener noreferrer">
+                        Plan du site
+                    </a>
+                </div>
+                <small class="footer-copyright">&copy;ENSIIE 2024</small>
+            </div>
+            <img class="footer__brackets" src="img/bracket.png" alt="">
+        </footer>
+    </body>
+</html>
